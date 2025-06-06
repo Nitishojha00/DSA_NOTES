@@ -1,5 +1,6 @@
 // T.C ->  O(log min(a, b))
 // S.C -> O(1)
+// a*b = lcm(a,b)*gcd(a,b)
 
 #include<bits/stdc++.h>
 using namespace std;
