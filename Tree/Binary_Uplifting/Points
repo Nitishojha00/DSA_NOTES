@@ -1,0 +1,35 @@
+
+step 1 --->   Create Adjacency List
+step 2 --->   Requirement ---
+            1. LCA 2d vector of size n*(log2(n)+1) , initialize with -1
+            2. Depth vector that store depth of every node
+
+
+step 3 ---> Simple DFS to set first parent and depth -> depth[node] = depth[parent]+1  💯
+
+step 4 ---> Filling all values in lca vector  -> (Dynamic Programming)
+                                            if (lca[i][j - 1] != -1)
+                                                     lca[i][j] = lca[lca[i][j - 1]][j - 1];
+                        
+step 5 ----> Handling Query call goes to findLca function
+
+step 6 ----> firstly if their level not same we bring them at same level
+
+                                            while(diff>0)
+                                                {
+                                                    int i = log2(diff);
+                                                    b = lca[b][i];
+                                                    diff-=(1<<i);
+                                                }
+                                                
+                                              //  both values are equal means ancestor found
+
+step 7 ---->   // Move both a and b up together
+            for (int i = LOG - 1; i >= 0; i--) 
+            {
+                if (lca[a][i] != lca[b][i]) // beacuse may be  ancestor ka bhi upar ka miljai to 
+                {
+                    a = lca[a][i];
+                    b = lca[b][i];
+                }
+            }                                          
