@@ -1,4 +1,4 @@
-//  complete code is same linke binary uplifting 
+//  complete code is same link binary uplifting 
 // Maths (logic) ---> dis = depth[u]+depth[v]-2*depth[ancestor]
 // Question said that answer[i] is the number of valid assignments for queries[i].
 

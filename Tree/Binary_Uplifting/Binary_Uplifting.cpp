@@ -10,7 +10,7 @@ vector<int>adj[n];
 vector<vector<int>> lca(n, vector<int>(LOG, -1));
 vector<int> depth(n);
 
-   // dfs is used to set 1st ancestor of every node and setting depth on node 💯 easy
+   // dfs is used to set just parent of every node and setting depth on node 💯 easy
    void dfs(int node, int parent)
     {
         lca[node][0] = parent;  // setting first parent
