@@ -1,3 +1,7 @@
+// first we find  that node which has highest depth picking that node  
+// as root node & again finding that node which has highest 
+// depth return that is answer
+
 #include <bits/stdc++.h>
 using namespace std;
 

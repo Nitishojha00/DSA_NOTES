@@ -1,4 +1,19 @@
 //used dfs + greedy its deasigned by me 
+//greedy kaisa  dp me to all the way dhekna padta 
+// initialised array with 1 indicating that 1 self 1 node
+// 1-2,2-3,3-4,4-5  we start traversing when we are returning from the leaf node 
+//  their is two option 
+// option 1 -> only one child/neib ->  a[node] += a[neib]   (simple)
+// option 2-> more than 1 child 2,3,4,5 ..whatever we face some situation
+//  for all child we do a[node] += a[neib]
+//  but we also count odd number of child example -> 1-2,1-3,1-4,3-5,5-6  at node 1 i get  
+// a[1] += a[2] -> a[2] = 1
+// a[1]+= a[3]  -> a[3] = 3 -> 3,5,6
+// a[1] += a[4] -> a[4] = 1
+// 3 odd then we can make maximum one pair with node 1 choose any its not effect answer 
+// that why i am subtracting  a[node] -= (odd_count - 1);
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

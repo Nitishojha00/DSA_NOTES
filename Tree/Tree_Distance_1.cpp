@@ -2,6 +2,13 @@
  //of a tree. The first algorithm is based on dynamic programming, and the second
 // algorithm uses two depth-first searches we use 2 method to solve that problem
 
+
+// first we find  that node which has highest depth picking that
+//  node as root node & again finding that node which has highest 
+// depth selecting both node and dfs and find depth from above 2
+//  node that we get ans[i] is maximum depth from the first
+// or the second node that we selected simple
+
  #include <bits/stdc++.h>
 using namespace std;
 
