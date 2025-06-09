@@ -1,3 +1,4 @@
+// ek code kam tamam kaisa lps nikalta sara ekhi me khatam
 // step 1 -> Finding lps of pattern string
 // step 2 -> making the horizontal and vertical string as question said
 // step 3-> start traversion first horizontally whenever i find a complete find of pattern then i have a integer 
