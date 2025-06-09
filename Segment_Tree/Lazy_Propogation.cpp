@@ -1,3 +1,36 @@
+
+// step 1 -> code same like point update 
+
+// step 2-> At Place of Base condition in Range_Update and 
+//         RangeSum we have to write these 
+//         dry run it for more understanding
+
+//          if(lazy[ind]!=0)
+//             {
+//                 int v = lazy[ind];
+//                 lazy[ind] = 0;
+//                 stree[ind]+=((se-ss+1)*v);
+//                 if(ss!=se)
+//                 {
+//                     lazy[2*ind+1] += v;
+//                     lazy[2*ind+2] += v;
+//                 }
+//             }
+
+// step 3-> In RangeUpdate ,
+//                           when the segment lie completely in region 
+
+//       if (rs <= ss && se <= re)  // Total overlap
+//         {
+//             stree[ind] += ((se-ss+1)*val);
+//              if(ss!=se)
+//               {
+//                  lazy[2*ind+1] += val;
+//                  lazy[2*ind+2] += val;
+//               }
+//               return;
+//         }
+
 #include <bits/stdc++.h>
 using namespace std;
 
