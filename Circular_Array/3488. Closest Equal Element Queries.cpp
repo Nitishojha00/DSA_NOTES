@@ -22,8 +22,8 @@
 
 
             //    ye do line circular array khhatam
-           //   int forward = min(abs(next - idx), sz - abs(next - idx));
-           //   int backward = min(abs(idx - prev), sz - abs(idx - prev));
+           //   int next = inds[(i + 1) % m];
+           //  int prev = inds[(i - 1 + m) % m];
 
 
 vector<int> solveQueries(vector<int>& nums, vector<int>& queries) {
