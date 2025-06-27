@@ -1,0 +1,1 @@
+Right skewed or left skewd tree can take O(n) worst time complexity for insertion , deletion , search

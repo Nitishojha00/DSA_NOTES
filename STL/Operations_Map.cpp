@@ -53,3 +53,19 @@
 | Erase          | `ust.erase(10);`          | Remove element      |
 | Find           | `auto it = ust.find(10);` | Iterator or `end()` |
 | Loop           | `for(auto x : ust)`       | No guaranteed order |
+
+
+ 5- Indexed_set
+
+| Operation                       | Code                  | Description                                         |
+| ------------------------------- | --------------------- | --------------------------------------------------- |
+| Insert                          | `s.insert(10);`       | Add element `10`                                    |
+| Erase                           | `s.erase(10);`        | Remove element `10`                                 |
+| Count (exists?)                 | `s.count(10);`        | Returns `1` if present, else `0`                    |
+| Size                            | `s.size();`           | Total number of elements                            |
+| Loop over elements              | `for (int x : s)`     | Iterates in ascending order                         |
+| **Find kth smallest (0-based)** | `*s.find_by_order(k)` | Returns k-th smallest element                       |
+| **Order of key (rank)**         | `s.order_of_key(x)`   | No. of elements strictly less than `x`              |
+| Clear                           | `s.clear();`          | Erases all elements                                 |
+| Lower Bound (≥ x)               | `s.lower_bound(x)`    | Iterator to first element ≥ x (use `find_by_order`) |
+| Upper Bound (> x)               | `s.upper_bound(x)`    | Iterator to first element > x                       |
