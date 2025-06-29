@@ -6,7 +6,7 @@
 // according to question we use operator
 if(arr[i-1] <= j) 
 {
-    dp[i][j] = dp[i-1][j] + dp[i][j-arr[i-1]];   // here we changed we are not taking dp[i-1][j]+arr[i-1]
+    dp[i][j] = dp[i-1][j] + dp[i][j-arr[i-1]];   // here we changed we are not taking dp[i-1][j]+arr[i-1] -> i-1 ki jagah i krdia bs
 }
 else
 {
