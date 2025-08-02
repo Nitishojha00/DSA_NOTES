@@ -6,7 +6,7 @@
 // | Query        | `in[node]`, `out[node]` | Query range in seg tree for subtree              |
 // | Segment Tree | Over `flat[]`           | Works on the linearized version                  |
 
-
+// segment tree , query , update is not main main is flattening
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -19,7 +19,8 @@ ll seg[4 * MAXN];
 int value[MAXN];
 
 void dfs(int node, int parent) {
-    in[node] = ++timer;
+    timer++;
+    in[node] = timer;
     flat[timer] = value[node];
     for (int child : tree[node]) {
         if (child != parent)
