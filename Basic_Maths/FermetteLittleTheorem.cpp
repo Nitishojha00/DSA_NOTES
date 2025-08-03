@@ -13,5 +13,3 @@
 
 //  if m not prime we have to use Euler’s Theorem -> phi -> euler totient function ✅ not improtant for placement
 
-
- 
