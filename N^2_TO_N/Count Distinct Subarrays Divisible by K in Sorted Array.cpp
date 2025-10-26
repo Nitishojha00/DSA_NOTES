@@ -1,0 +1,12 @@
+//  link -> https://leetcode.com/contest/weekly-contest-473/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/description/
+
+
+// You are given an integer array nums sorted in non-descending order and a positive integer k.
+
+// A subarray of nums is good if the sum of its elements is divisible by k.
+
+// Return an integer denoting the number of distinct good subarrays of nums.
+
+// Subarrays are distinct if their sequences of values are. For example, there are 3 distinct subarrays in [1, 1, 1], namely [1], [1, 1], and [1, 1, 1].
+
+//  ©leetcode
